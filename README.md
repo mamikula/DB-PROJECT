@@ -1,1 +1,1 @@
-# DB-PROJECT
+# Marcin Mikuła Dominik Grzesik
