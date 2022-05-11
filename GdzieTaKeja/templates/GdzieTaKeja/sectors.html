@@ -1,0 +1,24 @@
+<!doctype html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/sectors.css' %}">
+<body>
+    <div class="container">
+        <div id="listheader">SEKTORY</div>
+        <form action='' method="POST">
+            {% csrf_token %}
+            <table class="dimtable">{{ form.as_table }}</table>
+            <input id="nameinput" type="submit" value="Submit">
+        </form>
+        <div class="portlist">
+                {% for sector in filtered_sectors %}
+                    {% if sector.type == "perpendicular" %}
+                        <div class="port">
+                            <a id="link" href="{% url 'GdzieTaKeja:slots' port_id=port_id sector_name=sector.name %}">
+                                <p>{{ sector.name }}</p></a></div>
+                    {% else %}
+                        <div class="port"><a id="link" href="{% url 'GdzieTaKeja:reserve' port_id=port_id sector_name=sector.name slot_id=0 %}"><p>{{ sector.name }}</p></a></div>
+                    {% endif %}
+                {% endfor %}
+        </div>
+    </div>
+</body>

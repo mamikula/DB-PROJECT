@@ -1,0 +1,24 @@
+<!doctype html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/cssthanks.css' %}">
+<body>
+    <div class="container">
+        {% if action == 'reserve' %}
+            <div id="listheader">Dziękujemy za rezerwację w naszej Marinie!</div>
+        {% elif action == 'modify' %}
+            <div id="listheader">
+                <p>Modifykacja rezerwacji powiodła się!</p>
+                <p>Wprowadzone zmiany:</p>
+                {% if beforeF.date != dateFrom %}
+                    <div>Przed:{{ beforeF.date}} -> Po: {{ dateFrom }}</div>
+                {% endif %}
+                {% if beforeT.date != dateTo %}
+                    <div>Przed: {{ beforeT.date }} -> Po: {{ dateTo }}</div>
+                {% endif %}
+            </div>
+        {% elif action == 'delete' %}
+            <div id="listheader">Rezerwacja została usunięta!</div>
+        {% endif %}
+        <a id="link" href="{% url 'GdzieTaKeja:ports'  %}"><div>Powrót</div></a>
+    </div>
+</body>

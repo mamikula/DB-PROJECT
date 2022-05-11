@@ -1,0 +1,17 @@
+<!doctype html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/reserve.css' %}">
+<body>
+    <div class="container">
+        {% if sector_type == "parallel" %}
+            <div id="listheader">Dotarłeś do rezerwacji: port: {{ port.name }}, sector: {{ sector_name }}</div>
+        {% else %}
+            <div id="listheader">Dotarłeś do rezerwacji: port: {{ port.name }}, sector: {{ sector_name }}, slot: {{ slot_id }}</div>
+        {% endif %}
+        <form action="" method="post">
+            {% csrf_token %}
+            <table class="dimtable">{{ form.as_table }}</table>
+            <input id="nameinput" type="submit" value="Zarezerwuj!">
+        </form>
+    </div>
+</body>

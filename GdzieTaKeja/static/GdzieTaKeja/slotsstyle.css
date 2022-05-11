@@ -1,0 +1,40 @@
+body{
+    margin:0;
+}
+
+.container{
+    position: relative;
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto;
+    text-align: center;
+}
+#listheader{
+    margin-top: 2%;
+    position: relative;
+    border:1px solid red;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100px;
+    line-height: 100px;
+    width: 400px;
+}
+.portlist{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    list-style: none;
+
+}
+.port{
+    position: relative;
+    border: 1px solid blue;
+    height: 100px;
+    width: 300px;
+    line-height: 100px;
+    text-align: left;
+    padding:20px;
+    margin-top: 20px;
+}

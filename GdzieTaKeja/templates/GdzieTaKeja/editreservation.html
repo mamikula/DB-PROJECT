@@ -1,0 +1,25 @@
+<!doctype html>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/editreservation.css' %}">
+<body>
+    <div class="navbar">
+        <a id="curr" href="{% url 'GdzieTaKeja:ports' %}"><div class="logo">GdzieTaKeja</div></a>
+        <div class="options">
+            <a id="curr" href="{% url 'GdzieTaKeja:ports' %}"><div id="opt">Przystanie</div></a>
+            <a id="curr" href="{% url 'GdzieTaKeja:reservation' %}"><div id="opt">Rezerwacje</div></a>
+        </div>
+
+    </div>
+    <div class="container">
+         <div id="listheader">EDYTUJ REZERWACJĘ</div>
+         <div class="cityform">
+             <form action='' method="POST">
+                 {% csrf_token %}
+                 {{ form }}
+                 <input id="nameinput" type="submit" name='modify' value="Edytuj">
+                 <input id="nameinput" type="submit" name='modify' value="Usuń">
+             </form>
+         </div>
+    </div>
+</body>

@@ -1,0 +1,31 @@
+<!doctype html>
+{% load static %}
+{% load GdzieTaKeja_tags %}
+<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/ports.css' %}">
+<body>
+    <div class="navbar">
+        <a id="curr" href="{% url 'GdzieTaKeja:ports' %}"><div class="logo">GdzieTaKeja</div></a>
+        <div class="options">
+            <a id="curr" href="{% url 'GdzieTaKeja:ports' %}"><div id="opt">Przystanie</div></a>
+            <a id="curr" href="{% url 'GdzieTaKeja:reservation' %}"><div id="opt">Rezerwacje</div></a>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div id="listheader">PRZYSTANIE</div>
+        <div class="cityform">
+            <form action='' method="POST">
+                {% csrf_token %}
+                {{ form }}
+                <input id="nameinput" type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="portlist">
+            {% for port in port_list %}
+                <div class="port"><a id="link" href="{% url 'GdzieTaKeja:sectors' port_id=port|mongo_id %}"><p>{{ port.name }}</p></a></div>
+            {% endfor %}
+        </div>
+
+    </div>
+</body>

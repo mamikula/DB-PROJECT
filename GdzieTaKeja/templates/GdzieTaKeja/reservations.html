@@ -1,0 +1,30 @@
+<!doctype html>
+{% load static %}
+{% load GdzieTaKeja_tags %}
+<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/reservationstyle.css' %}">
+<body>
+    <div class="navbar">
+        <a id="curr" href="{% url 'GdzieTaKeja:ports' %}"><div class="logo">GdzieTaKeja</div></a>
+        <div class="options">
+            <a id="curr" href="{% url 'GdzieTaKeja:ports' %}"><div id="opt">Przystanie</div></a>
+            <a id="curr" href="{% url 'GdzieTaKeja:reservation' %}"><div id="opt">Rezerwacje</div></a>
+        </div>
+
+    </div>
+    <div class="container">
+         <div id="listheader">Wyszukaj swoją rezerwację:</div>
+         <div class="cityform">
+             <form action='' method="POST">
+                {% csrf_token %}
+                {{ form }}
+                <input id="nameinput" type="submit" value="Submit">
+             </form>
+             <p style="text-align: left">* - konieczne do podania</p>
+         </div>
+        <div class="portlist">
+            {% for res in reservation_found %}
+                <a id="link" href="{% url 'GdzieTaKeja:editreservation' reservation_id=res|mongo_id %}"><div class="port"><p>{{ res.yachtID }}</p></div></a>
+            {% endfor %}
+        </div>
+    </div>
+</body>
