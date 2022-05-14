@@ -17,7 +17,7 @@
         <div class="cityform">
             <form action='' method="POST">
                 {% csrf_token %}
-                {{ form }}
+                <table class="dimtable">{{ form.as_table }}</table>
                 <input id="nameinput" type="submit" value="Submit">
             </form>
         </div>

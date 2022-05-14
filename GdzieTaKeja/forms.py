@@ -22,9 +22,7 @@ class DataForm(forms.Form):
 
 
 class ReservationForm(forms.Form):
-    IN = forms.CharField(label="Numer rejestracyjny jachtu:",min_length=6,max_length=6,required=False)
-    name=forms.CharField(label="Imię*:")
-    surname=forms.CharField(label="Nazwisko*:")
+    reservationNumber = forms.CharField(label="*Podaj numer rezerwacji:", min_length=6,max_length=6,required=True)
 
 class EditReservationForm(forms.Form):
     dateFrom = forms.DateField(label="Początek rezerwacji(rrrr-mm-dd):")

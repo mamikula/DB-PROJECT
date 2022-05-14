@@ -7,7 +7,7 @@
         <div class="portlist">
             {% for slot in slot_list %}
                <div class="port">
-                   <a id="link" href="{% url 'GdzieTaKeja:reserve' port_id=port_id sector_name=sector_name slot_id=slot.id %}">
+                   <a id="link" href="{% url 'GdzieTaKeja:reserve' port_id=port_id sector_name=sector_name slot_id=slot.id y_id=y_id %}">
                        <p>{{ slot.id }}</p></a></div>
             {% endfor %}
         </div>

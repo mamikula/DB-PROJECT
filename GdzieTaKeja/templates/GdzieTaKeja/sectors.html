@@ -13,10 +13,10 @@
                 {% for sector in filtered_sectors %}
                     {% if sector.type == "perpendicular" %}
                         <div class="port">
-                            <a id="link" href="{% url 'GdzieTaKeja:slots' port_id=port_id sector_name=sector.name %}">
+                            <a id="link" href="{% url 'GdzieTaKeja:slots' port_id=port_id sector_name=sector.name y_id=y_id %}">
                                 <p>{{ sector.name }}</p></a></div>
                     {% else %}
-                        <div class="port"><a id="link" href="{% url 'GdzieTaKeja:reserve' port_id=port_id sector_name=sector.name slot_id=0 %}"><p>{{ sector.name }}</p></a></div>
+                        <div class="port"><a id="link" href="{% url 'GdzieTaKeja:reserve' port_id=port_id sector_name=sector.name y_id=y_id slot_id=0 %}"><p>{{ sector.name }}</p></a></div>
                     {% endif %}
                 {% endfor %}
         </div>

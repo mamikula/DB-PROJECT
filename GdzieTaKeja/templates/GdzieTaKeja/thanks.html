@@ -4,7 +4,7 @@
 <body>
     <div class="container">
         {% if action == 'reserve' %}
-            <div id="listheader">Dziękujemy za rezerwację w naszej Marinie!</div>
+            <div id="listheader">Dziękujemy za rezerwację w naszej Marinie!<br>Numer Twojej rezerwacji to: {{ reservationNumber }}</div>
         {% elif action == 'modify' %}
             <div id="listheader">
                 <p>Modifykacja rezerwacji powiodła się!</p>
@@ -18,6 +18,8 @@
             </div>
         {% elif action == 'delete' %}
             <div id="listheader">Rezerwacja została usunięta!</div>
+        {% elif action == 'reservation_unavailable' %}
+            <div id="listheader">To miejsce zostało już zajęte lub wyłączone z użytku!</div>
         {% endif %}
         <a id="link" href="{% url 'GdzieTaKeja:ports'  %}"><div>Powrót</div></a>
     </div>
