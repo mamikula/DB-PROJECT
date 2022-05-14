@@ -22,7 +22,7 @@ class DataForm(forms.Form):
 
 
 class ReservationForm(forms.Form):
-    reservationNumber = forms.CharField(label="*Podaj numer rezerwacji:", min_length=6,max_length=6,required=True)
+    reservationNumber = forms.CharField(label="Podaj numer rezerwacji:", min_length=6,max_length=6,required=True)
 
 class EditReservationForm(forms.Form):
     dateFrom = forms.DateField(label="Początek rezerwacji(rrrr-mm-dd):")

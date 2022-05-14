@@ -1,7 +1,7 @@
 <!doctype html>
 {% load static %}
 {% load GdzieTaKeja_tags %}
-<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/reservationstyle.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/reservationStyle.css' %}">
 <body>
     <div class="navbar">
         <a id="curr" href="{% url 'GdzieTaKeja:ports' %}"><div class="logo">GdzieTaKeja</div></a>
@@ -12,18 +12,33 @@
 
     </div>
     <div class="container">
-         <div id="listheader">Wyszukaj swoją rezerwację:</div>
+         <h1 id="listheader">Wyszukaj swoją rezerwację:</h1>
          <div class="cityform">
              <form action='' method="POST">
+
                 {% csrf_token %}
-                {{ form }}
-                <input id="nameinput" type="submit" value="Submit">
+                <div class = "dimtable">{{ form.as_table }}</div>
+                <input class="submitButton" type="submit" value="Szukaj">
+
              </form>
-             <p style="text-align: left">* - konieczne do podania</p>
          </div>
         <div class="portlist">
             {% for res in reservation_found %}
-                <a id="link" href="{% url 'GdzieTaKeja:editreservation' reservation_id=res|mongo_id %}"><div class="port"><p>{{ res.yachtID }}</p></div></a>
+                {% if res.active == True %}
+                    <a id="link" href="{% url 'GdzieTaKeja:editreservation' reservation_number=res.reservationNumber %}">
+                        <div class="portCard">
+                            <p>Numer rezerwacji: {{ res.reservationNumber }}</p>
+                            <p class="reservationStatus">Rezerwacja aktywna</p>
+                        </div>
+                    </a>
+                {% else %}
+                    <div id = "link">
+                        <div class="portCard">
+                            <p>Numer rezerwacji: {{ res.reservationNumber }}</p>
+                            <p class="reservationStatus">Rezerwacja nieaktywna/anulowana</p>
+                        </div>
+                    </div>
+                {% endif %}
             {% endfor %}
         </div>
     </div>

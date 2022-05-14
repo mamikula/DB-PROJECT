@@ -4,7 +4,28 @@
     <list default="true" id="2938d71f-a9f3-42e4-be96-aeaede874292" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GdzieTaKeja/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/cssthanks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/editreservation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/ports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/reservationstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/reservationstyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/sectors.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/editreservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/editreservation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/ports.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/ports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reservations.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reservations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reserve.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reserve.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/sectors.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/sectors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/slots.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/slots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/thanks.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/thanks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/views.py" afterDir="false" />
+    </list>
+    <list id="a3658571-303e-4a18-ad9c-49133b7690a8" name="Changes by domig" comment="">
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/reserve.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/slotsstyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reservations.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reservations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reserve.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reserve.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/sectors.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/sectors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/slots.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/slots.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/thanks.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/thanks.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GdzieTaKeja/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/views.py" afterDir="false" />
     </list>
@@ -33,6 +54,64 @@
     <setting file="file://$PROJECT_DIR$/GdzieTaKeja/urls.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GdzieTaKeja/views.py" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/slots.html">
+      <ranges>
+        <range start1="2" end1="3" start2="2" end2="3" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="5" end1="6" start2="5" end2="8" changelist="a3658571-303e-4a18-ad9c-49133b7690a8" />
+        <range start1="8" end1="11" start2="10" end2="15" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reservations.html">
+      <ranges>
+        <range start1="3" end1="4" start2="3" end2="4" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="14" end1="15" start2="14" end2="15" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="17" end1="17" start2="17" end2="18" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="18" end1="20" start2="19" end2="22" changelist="a3658571-303e-4a18-ad9c-49133b7690a8" />
+        <range start1="21" end1="22" start2="23" end2="23" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="25" end1="26" start2="26" end2="41" changelist="a3658571-303e-4a18-ad9c-49133b7690a8" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/thanks.html">
+      <ranges>
+        <range start1="2" end1="3" start2="2" end2="3" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="6" end1="7" start2="6" end2="9" changelist="a3658571-303e-4a18-ad9c-49133b7690a8" />
+        <range start1="8" end1="9" start2="10" end2="11" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="17" end1="18" start2="19" end2="20" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="19" end1="20" start2="21" end2="22" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="21" end1="22" start2="23" end2="24" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="23" end1="24" start2="25" end2="26" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/sectors.html">
+      <ranges>
+        <range start1="2" end1="3" start2="2" end2="3" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="5" end1="6" start2="5" end2="9" changelist="a3658571-303e-4a18-ad9c-49133b7690a8" />
+        <range start1="9" end1="10" start2="12" end2="13" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="11" end1="11" start2="14" end2="15" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="14" end1="17" start2="18" end2="23" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="18" end1="19" start2="24" end2="29" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/GdzieTaKeja/views.py">
+      <ranges>
+        <range start1="175" end1="176" start2="175" end2="176" changelist="a3658571-303e-4a18-ad9c-49133b7690a8" />
+        <range start1="184" end1="185" start2="184" end2="185" changelist="a3658571-303e-4a18-ad9c-49133b7690a8" />
+        <range start1="192" end1="195" start2="192" end2="194" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="203" end1="204" start2="202" end2="203" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="237" end1="238" start2="236" end2="237" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="240" end1="241" start2="239" end2="243" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reserve.html">
+      <ranges>
+        <range start1="2" end1="3" start2="2" end2="3" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="6" end1="7" start2="6" end2="13" changelist="a3658571-303e-4a18-ad9c-49133b7690a8" />
+        <range start1="8" end1="9" start2="14" end2="22" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+        <range start1="13" end1="14" start2="26" end2="27" changelist="2938d71f-a9f3-42e4-be96-aeaede874292" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -42,15 +121,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/4 semestr projekty/Bazy danych/Projekt/DB-PROJECT&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "E:/4 semestr projekty/Bazy danych/Projekt/DB-PROJECT"
   }
-}</component>
+}]]></component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
   </component>
@@ -104,6 +184,7 @@
       <workItem from="1652266041742" duration="1155000" />
       <workItem from="1652358185817" duration="17365000" />
       <workItem from="1652518582592" duration="1323000" />
+      <workItem from="1652520262588" duration="13378000" />
     </task>
     <servers />
   </component>

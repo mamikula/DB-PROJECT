@@ -1,14 +1,18 @@
 <!doctype html>
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/slotsstyle.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/slotStyle.css' %}">
 <body>
     <div class="container">
-        <div id="listheader">Slots w {{port.name}}, {{ sector_name }}</div>
+        <div class="portHeader">Miejsca w porcie: {{port.name}}</div>
+        <div class="sectorHeader">W sektorze: {{ sector_name }}</div>
+        <a id="link" href="{% url 'GdzieTaKeja:sectors' port_id%}"><div id="go_back">Cofnij</div></a>
         <div class="portlist">
             {% for slot in slot_list %}
-               <div class="port">
-                   <a id="link" href="{% url 'GdzieTaKeja:reserve' port_id=port_id sector_name=sector_name slot_id=slot.id y_id=y_id %}">
-                       <p>{{ slot.id }}</p></a></div>
+               <a id="link" href="{% url 'GdzieTaKeja:reserve' port_id=port_id sector_name=sector_name slot_id=slot.id y_id=y_id %}">
+                  <div class="portCard">
+                      <p>Numer miejsca: {{ slot.id }}</p>
+                  </div>
+               </a>
             {% endfor %}
         </div>
     </div>

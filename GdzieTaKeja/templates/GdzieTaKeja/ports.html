@@ -1,7 +1,7 @@
 <!doctype html>
 {% load static %}
 {% load GdzieTaKeja_tags %}
-<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/ports.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/portStyle.css' %}">
 <body>
     <div class="navbar">
         <a id="curr" href="{% url 'GdzieTaKeja:ports' %}"><div class="logo">GdzieTaKeja</div></a>
@@ -13,17 +13,22 @@
     </div>
 
     <div class="container">
-        <div id="listheader">PRZYSTANIE</div>
+        <h1 id="listheader">PRZYSTANIE</h1>
         <div class="cityform">
             <form action='' method="POST">
                 {% csrf_token %}
-                <table class="dimtable">{{ form.as_table }}</table>
-                <input id="nameinput" type="submit" value="Submit">
+                <div class="dimtable">{{ form.as_table }}</div>
+
+                <input class="submitButton" type="submit" value="Szukaj">
             </form>
         </div>
         <div class="portlist">
             {% for port in port_list %}
-                <div class="port"><a id="link" href="{% url 'GdzieTaKeja:sectors' port_id=port|mongo_id %}"><p>{{ port.name }}</p></a></div>
+                <a id="link" href="{% url 'GdzieTaKeja:sectors' port_id=port|mongo_id %}">
+                    <div class="portCard">
+                        <p>{{ port.name }}</p>
+                    </div>
+                </a>
             {% endfor %}
         </div>
 

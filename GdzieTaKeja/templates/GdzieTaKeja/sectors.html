@@ -1,22 +1,32 @@
 <!doctype html>
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/sectors.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/sectorStyle.css' %}">
 <body>
     <div class="container">
-        <div id="listheader">SEKTORY</div>
+        <h1 id="listheader">SEKTORY</h1>
+        <a id="link" href="{% url 'GdzieTaKeja:ports'%}">
+            <div id="go_back">Cofnij</div>
+        </a>
         <form action='' method="POST">
             {% csrf_token %}
             <table class="dimtable">{{ form.as_table }}</table>
-            <input id="nameinput" type="submit" value="Submit">
+            <input class="submitButton" type="submit" value="Szukaj">
         </form>
+
         <div class="portlist">
                 {% for sector in filtered_sectors %}
                     {% if sector.type == "perpendicular" %}
-                        <div class="port">
-                            <a id="link" href="{% url 'GdzieTaKeja:slots' port_id=port_id sector_name=sector.name y_id=y_id %}">
-                                <p>{{ sector.name }}</p></a></div>
+                        <a id="link" href="{% url 'GdzieTaKeja:slots' port_id=port_id sector_name=sector.name y_id=y_id %}">
+                            <div class="portCard">
+                                <p>Typ sektora: {{ sector.name }}</p>
+                            </div>
+                        </a>
                     {% else %}
-                        <div class="port"><a id="link" href="{% url 'GdzieTaKeja:reserve' port_id=port_id sector_name=sector.name y_id=y_id slot_id=0 %}"><p>{{ sector.name }}</p></a></div>
+                        <a id="link" href="{% url 'GdzieTaKeja:reserve' port_id=port_id sector_name=sector.name y_id=y_id slot_id=0 %}">
+                            <div class="portCard">
+                                <p>Typ sektora: {{ sector.name }}</p>
+                            </div>
+                        </a>
                     {% endif %}
                 {% endfor %}
         </div>

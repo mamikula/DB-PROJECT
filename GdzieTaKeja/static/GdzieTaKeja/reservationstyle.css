@@ -59,7 +59,6 @@ body{
     grid-template-columns: auto;
     text-align: center;
     justify-content: center;
-    border:1px solid #e35f5f;
 }
 @media(max-width: 1300px){
     .container{
@@ -67,20 +66,54 @@ body{
     }
 }
 .cityform{
-    border: 1px solid purple;
-    position: relative;
-    padding:10px;
+    width: 50vw;
+    margin: 0 auto;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
 }
+
 #listheader{
     position: relative;
-    border:1px solid red;
     margin-right: auto;
     text-align: center;
     margin-left: auto;
     height: 100px;
     line-height: 100px;
-    width: 400px;
+
+    font-size: 50px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #8d5d45, #81492d);
+    color: transparent;
+    -webkit-background-clip: text;
 }
+
+.dimtable{
+    width: 100%;
+    text-align: center;
+}
+
+.submitButton{
+    margin-top: 12px;
+    width: 130px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    border-radius: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.submitButton:hover{
+    background-color: #cccccc;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s;
+}
+
 .portlist{
     position: relative;
     display: grid;
@@ -88,15 +121,38 @@ body{
     justify-content: center;
     list-style: none;
     height: fit-content;
-    border: 1px solid blueviolet;
+    /*border: 1px solid blueviolet;*/
 }
-.port{
+.portCard{
     position: relative;
-    border: 1px solid blue;
     height: 100px;
     width: 300px;
     line-height: 100px;
-    text-align: center;
+    text-align: left;
     padding:20px;
-    margin-bottom: 20px;
+    box-shadow: rgba(134, 90, 90, 0.2) 0 10px 35px 0;
+}
+
+
+.reservationStatus{
+    /*border: 1px solid red;*/
+    font-size: 8px;
+    margin-top: 20px;
+    color: red;
+}
+
+#link{
+    margin-bottom: 40px;
+    color: black;
+    text-decoration: none;
+    /*border: 1px solid green;*/
+}
+
+p{
+    /*border: 3px solid blueviolet;*/
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    font-family: sans-serif;
+    font-style: normal;
 }

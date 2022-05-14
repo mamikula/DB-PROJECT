@@ -173,7 +173,7 @@ def reserve(request,port_id,sector_name,y_id,slot_id):
             return render(request, 'GdzieTaKeja/thanks.html',{'reservationNumber':reservationNumber,'action':'reserve'})
     else:
         form = DataForm()
-    return render(request, 'GdzieTaKeja/reserve.html', {'port_id':port_id,'dim_len':len(dimensions), 'port':port, 'sector_name':sector_name, 'sector_type':sector_type, 'slot_id':slot_id, 'form':form})
+    return render(request, 'GdzieTaKeja/reserve.html', {'port_id':port_id,'dim_len':len(dimensions), 'port':port, 'sector_name':sector_name, 'sector_type':sector_type, 'slot_id':slot_id, 'form':form,'y_id':y_id})
 
 def reservation(request):
     reservations_found = None
@@ -182,7 +182,7 @@ def reservation(request):
         if form.is_valid():
             reservationNumberInput = form.cleaned_data['reservationNumber']
 
-            reservations_found = reservations.find({'reservationNumber': reservationNumberInput, 'active': True})
+            reservations_found = reservations.find({'reservationNumber': reservationNumberInput})
 
             return render(request,'GdzieTaKeja/reservations.html', {'form': form,'reservation_found':reservations_found})
 
@@ -190,9 +190,8 @@ def reservation(request):
         form = ReservationForm()
     return render(request,'GdzieTaKeja/reservations.html',{'form':form,'reservation_found':reservations_found})
 
-def editreservation(request,reservation_id):
-    reservationInstance = ObjectId(reservation_id)
-    reservation = reservations.find_one({'_id': reservationInstance})
+def editreservation(request,reservation_number):
+    reservation = reservations.find_one({'reservationNumber': reservation_number})
     if request.method == 'POST':
         form = EditReservationForm(request.POST)
         if request.POST['modify'] == 'Edytuj':
@@ -201,7 +200,7 @@ def editreservation(request,reservation_id):
                 beforeDateTo=reservation['dateTo']
                 dateFrom=form.cleaned_data['dateFrom']
                 dateTo=form.cleaned_data['dateTo']
-                reservations.update_one({'_id': reservationInstance}, {'$set': {'dateFrom': datetime.combine(dateFrom, datetime.min.time()),
+                reservations.update_one({'reservationNumber': reservation_number}, {'$set': {'dateFrom': datetime.combine(dateFrom, datetime.min.time()),
                                                                         'dateTo':datetime.combine(dateTo, datetime.min.time())}})
                 return render(request,'GdzieTaKeja/thanks.html',{'action':'modify','beforeF':beforeDateFrom,'beforeT':beforeDateTo,
                                                                  "dateFrom":dateFrom,'dateTo':dateTo})
@@ -235,8 +234,11 @@ def editreservation(request,reservation_id):
                 sectors_list[arrayid] = sectorToUpdate
                 ports.update_one({'_id': portInstance}, {'$set': {'sectors': sectors_list}})
 
-            reservations.update_one({'_id': reservationInstance}, {'$set': {'active': False}})
+            reservations.update_one({'reservationNumber': reservation_number}, {'$set': {'active': False}})
             return render(request, 'GdzieTaKeja/thanks.html',{'action':'delete'})
     else:
-        form = EditReservationForm(initial={'dateFrom':reservation['dateFrom'],'dateTo':reservation['dateTo']})
+        if len(list(reservations.find({'reservationNumber': reservation_number}))) != 0:
+            form = EditReservationForm(initial={'dateFrom': reservation['dateFrom'], 'dateTo': reservation['dateTo']})
+        else:
+            form = EditReservationForm()
     return render(request,'GdzieTaKeja/editreservation.html',{'form':form,'reservation':reservation})
