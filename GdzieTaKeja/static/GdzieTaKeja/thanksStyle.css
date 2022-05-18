@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+}
+
+.container{
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+#listheader{
+    margin-right: auto;
+    text-align: center;
+    margin-left: auto;
+    height: 100px;
+    line-height: 100px;
+
+    font-size: 50px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #8d5d45, #81492d);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.communicat{
+    margin-right: auto;
+    text-align: center;
+    margin-left: auto;
+    height: 100px;
+    line-height: 100px;
+
+    font-size: 40px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #8d457f, #732839);
+    color: transparent;
+    -webkit-background-clip: text;
+    
+}
+.submitButton{
+    margin-top: 12px;
+    width: 130px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    border-radius: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.submitButton:hover{
+    background-color: #cccccc;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s;
+}
+
+#resNumber{
+    color: red;
+    font-weight: 700;
+}

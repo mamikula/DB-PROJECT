@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+}
+#link{
+    color: black;
+    text-decoration: none;
+    justify-self: center;
+}
+.container{
+    margin: 0;
+    row-gap: 1%;
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+#listheader{
+    margin-right: auto;
+    text-align: center;
+    margin-left: auto;
+    height: 100px;
+    line-height: 100px;
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #8d5d45, #81492d);
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 0;
+}
+
+.act-opt{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 3px;
+}
+#go_back{
+    position: relative;
+    border: 1px solid black;
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+#go_back:hover{
+    background-color: #cccccc;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s;
+
+}
+
+form{
+    font-family: sans-serif;
+}
+
+.dimtable{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.submitButton{
+    margin-top: 12px;
+    width: 130px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    border-radius: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.portSektor{
+    font-size: 40px;
+}
+
+.submitButton:hover{
+    background-color: #cccccc;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s;
+}

@@ -1,0 +1,97 @@
+body{
+    margin:0;
+}
+#link{
+    color: black;
+    text-decoration: none;
+    justify-self: center;
+}
+.container{
+    position: relative;
+    margin: 0;
+    margin-top: 2%;
+    row-gap: 1%;
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    justify-content: center;
+}
+#listheader{
+    position: relative;
+    margin-right: auto;
+    text-align: center;
+    margin-left: auto;
+    height: 100px;
+    line-height: 100px;
+
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #8d5d45, #81492d);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#go_back{
+    position: relative;
+    border: 1px solid black;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+#go_back:hover{
+    background-color: #cccccc;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s;
+}
+.portlist{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    list-style: none;
+    height: fit-content;
+}
+.portCard{
+    position: relative;
+    height: 100px;
+    width: 300px;
+    line-height: 100px;
+    text-align: left;
+    padding:20px;
+    box-shadow: rgba(134, 90, 90, 0.2) 0 10px 35px 0;
+}
+
+#link {
+    margin-bottom: 40px;
+    color: black;
+    text-decoration: none;
+}
+
+#go_back:hover{
+    background-color: #cccccc;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s;
+
+}
+
+.submitButton:hover{
+    background-color: #cccccc;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s;
+}
+
+.portHeader, .sectorHeader{
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.portHeader{
+    font-size: 40px;
+}
+
+.sectorHeader{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
