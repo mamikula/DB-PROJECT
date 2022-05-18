@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2938d71f-a9f3-42e4-be96-aeaede874292" name="Changes" comment="" />
+    <list default="true" id="2938d71f-a9f3-42e4-be96-aeaede874292" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/reservationstyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reservations.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reservations.html" afterDir="false" />
+    </list>
     <list id="a3658571-303e-4a18-ad9c-49133b7690a8" name="Changes by domig" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +25,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/DjangoMongoDBPortProject/settings.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/DjangoMongoDBPortProject/urls.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/ports.html" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GdzieTaKeja/urls.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GdzieTaKeja/views.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DjangoMongoDBPortProject/settings.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DjangoMongoDBPortProject/urls.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -37,16 +40,9 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "E:/4 semestr projekty/MOWNIT/lab7"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
   </component>
@@ -102,6 +98,7 @@
       <workItem from="1652518582592" duration="1323000" />
       <workItem from="1652520262588" duration="13378000" />
       <workItem from="1652790876260" duration="22000" />
+      <workItem from="1652893227015" duration="301000" />
     </task>
     <servers />
   </component>
@@ -118,5 +115,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
