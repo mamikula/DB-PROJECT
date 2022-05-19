@@ -62,7 +62,6 @@ body{
     row-gap: 50px;
     grid-template-columns: auto;
     text-align: center;
-    border:1px solid #e35f5f;
 
 }
 
@@ -138,6 +137,11 @@ body{
     text-align: left;
     padding:20px;
     box-shadow: rgba(134, 90, 90, 0.2) 0 10px 35px 0;
+    transition: 0.3s;
+}
+.portCard:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 #link{

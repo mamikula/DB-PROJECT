@@ -1,12 +1,9 @@
-# import datetime for date fields
 import string
 import random
 
 from bson import ObjectId
-from django.http import HttpResponseRedirect
-from datetime import datetime,date
-from django.shortcuts import render
-
+from datetime import datetime
+from django.shortcuts import render, redirect
 
 # Create your views here.
 import pymongo
@@ -23,10 +20,11 @@ yachts=dbname["Yacht"]
 
 def get_res_number(length):
     letters = string.ascii_lowercase
-    while(True):
+    while True:
         resNum = ''.join(random.choice(letters) for _ in range(length))
         if len(list(reservations.find({'reservationNumber' : resNum}))) == 0:
             return resNum
+
 
 def index(request):
     port_list = ports.find({})
@@ -65,6 +63,12 @@ def sectors(request,port_id):
             filtered_sectors=[]
             for s in sectors_list:
                 if s['type'] == 'perpendicular':
+                    q=0
+                    for slot in s['slots']:
+                        if slot['taken']==False:
+                            q+=1
+                    if q==0:
+                        continue
                     req=0
                     if s['maxWidth'] >= width:
                         req+=1
@@ -236,6 +240,8 @@ def editreservation(request,reservation_number):
 
             reservations.update_one({'reservationNumber': reservation_number}, {'$set': {'active': False}})
             return render(request, 'GdzieTaKeja/thanks.html',{'action':'delete'})
+        elif request.POST['modify'] == 'Cofnij':
+            return redirect('/reservations/')
     else:
         if len(list(reservations.find({'reservationNumber': reservation_number}))) != 0:
             form = EditReservationForm(initial={'dateFrom': reservation['dateFrom'], 'dateTo': reservation['dateTo']})

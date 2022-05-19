@@ -24,7 +24,7 @@ body{
     -webkit-background-clip: text;
 }
 
-.communicat{
+.notification{
     margin-right: auto;
     text-align: center;
     margin-left: auto;
@@ -58,6 +58,15 @@ body{
 }
 
 #resNumber{
+    position: relative;
+    margin-top:10px;
     color: red;
+    font-size:30px;
+    padding:5px;
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 700;
 }

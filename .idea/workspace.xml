@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2938d71f-a9f3-42e4-be96-aeaede874292" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/reservationstyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/editreservationStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/portStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/reservation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/reserveStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/sectorStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/slotStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/static/GdzieTaKeja/thanksStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/editreservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/editreservation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/ports.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/ports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reservations.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reservations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reserve.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/reserve.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/sectors.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/sectors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/slots.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/slots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/thanks.html" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/templates/GdzieTaKeja/thanks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GdzieTaKeja/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/GdzieTaKeja/views.py" afterDir="false" />
     </list>
     <list id="a3658571-303e-4a18-ad9c-49133b7690a8" name="Changes by domig" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +112,9 @@
       <workItem from="1652518582592" duration="1323000" />
       <workItem from="1652520262588" duration="13378000" />
       <workItem from="1652790876260" duration="22000" />
-      <workItem from="1652893227015" duration="301000" />
+      <workItem from="1652893227015" duration="716000" />
+      <workItem from="1652970758988" duration="5867000" />
+      <workItem from="1652978160845" duration="527000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
 <!doctype html>
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/thanksStyle.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/results_style.css' %}">
 <body>
     <div class="container">
         {% if action == 'reserve' %}
@@ -9,19 +9,19 @@
             <div> Proszę zapamiętać numer rezerwacji przed kontynuowaniem!</div>
         {% elif action == 'modify' %}
             <h1 id="listheader">
-                <p>Modifykacja rezerwacji powiodła się!</p>
-                <p>Wprowadzone zmiany:</p>
-                {% if beforeF.date != dateFrom %}
-                    <div>Przed:{{ beforeF.date}} -> Po: {{ dateFrom }}</div>
-                {% endif %}
-                {% if beforeT.date != dateTo %}
-                    <div>Przed: {{ beforeT.date }} -> Po: {{ dateTo }}</div>
-                {% endif %}
+                Modifykacja rezerwacji powiodła się!
             </h1>
+            <h1>Wprowadzone zmiany:</h1>
+            {% if beforeF.date != dateFrom %}
+                <p style="font-size: 20px">Data rozpoczęcia rezerwacji: {{ beforeF.date}} ➡ {{ dateFrom }}</p>
+            {% endif %}
+            {% if beforeT.date != dateTo %}
+                <p style="font-size: 20px">Data zakończenia rezerwacji: {{ beforeT.date }} ➡ {{ dateTo }}</p>
+            {% endif %}
         {% elif action == 'delete' %}
-            <div class="communicat">Rezerwacja została usunięta!</div>
+            <h1>Rezerwacja została usunięta!</h1>
         {% elif action == 'reservation_unavailable' %}
-            <div class="communicat">To miejsce zostało już zajęte lub wyłączone z użytku!</div>
+            <h1>To miejsce zostało już zajęte lub wyłączone z użytku!</h1>
         {% endif %}
         <a id="link" href="{% url 'GdzieTaKeja:ports'  %}"><input class="submitButton" type="submit" value="Powrót"></a>
     </div>

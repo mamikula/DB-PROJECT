@@ -1,6 +1,7 @@
 body{
     margin:0;
 }
+
 #link{
     color: black;
     text-decoration: none;
@@ -16,6 +17,7 @@ body{
     text-align: center;
     justify-content: center;
 }
+
 #listheader{
     position: relative;
     margin-right: auto;
@@ -31,6 +33,10 @@ body{
     -webkit-background-clip: text;
 }
 
+form{
+    font-family: sans-serif;
+}
+
 #go_back{
     position: relative;
     border: 1px solid black;
@@ -40,11 +46,34 @@ body{
     border-radius: 5px;
     transition: 0.3s;
 }
-#go_back:hover{
+
+
+.dimtable{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.submitButton{
+    margin-top: 12px;
+    width: 130px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    border-radius: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.submitButton:hover{
     background-color: #cccccc;
     box-shadow: 0 0 10px black;
     transition: 0.3s;
 }
+
 .portlist{
     position: relative;
     display: grid;
@@ -52,6 +81,8 @@ body{
     justify-content: center;
     list-style: none;
     height: fit-content;
+    margin-top: 3%;
+
 }
 .portCard{
     position: relative;
@@ -61,6 +92,11 @@ body{
     text-align: left;
     padding:20px;
     box-shadow: rgba(134, 90, 90, 0.2) 0 10px 35px 0;
+    transition: 0.3s;
+}
+.portCard:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 #link {
@@ -73,25 +109,6 @@ body{
     background-color: #cccccc;
     box-shadow: 0 0 10px black;
     transition: 0.3s;
-
 }
 
-.submitButton:hover{
-    background-color: #cccccc;
-    box-shadow: 0 0 10px black;
-    transition: 0.3s;
-}
 
-.portHeader, .sectorHeader{
-    font-family: sans-serif;
-    font-weight: 500;
-}
-
-.portHeader{
-    font-size: 40px;
-}
-
-.sectorHeader{
-    font-size: 30px;
-    margin-bottom: 10px;
-}

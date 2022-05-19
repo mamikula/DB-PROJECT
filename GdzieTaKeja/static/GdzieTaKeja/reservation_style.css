@@ -121,7 +121,6 @@ body{
     justify-content: center;
     list-style: none;
     height: fit-content;
-    /*border: 1px solid blueviolet;*/
 
 }
 .portCard{
@@ -133,10 +132,22 @@ body{
     padding:20px;
     box-shadow: rgba(134, 90, 90, 0.2) 0 10px 35px 0;
 }
+.portCardAct{
+    position: relative;
+    height: 100px;
+    width: 300px;
+    line-height: 100px;
+    text-align: left;
+    padding:20px;
+    box-shadow: rgba(134, 90, 90, 0.2) 0 10px 35px 0;
+}
+.portCardAct:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
 
 
 .reservationStatus{
-    /*border: 1px solid red;*/
     font-size: 10px;
     margin-top: 20px;
 }
@@ -145,11 +156,9 @@ body{
     margin-bottom: 40px;
     color: black;
     text-decoration: none;
-    /*border: 1px solid green;*/
 }
 
 p{
-    /*border: 3px solid blueviolet;*/
     margin: 0;
     padding: 0;
     height: 20px;

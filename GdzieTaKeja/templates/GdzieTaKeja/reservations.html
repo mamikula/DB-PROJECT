@@ -1,7 +1,7 @@
 <!doctype html>
 {% load static %}
 {% load GdzieTaKeja_tags %}
-<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/reservation.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/reservation_style.css' %}">
 <body>
     <div class="navbar">
         <a id="curr" href="{% url 'GdzieTaKeja:ports' %}"><div class="logo">GdzieTaKeja</div></a>
@@ -26,7 +26,7 @@
             {% for res in reservation_found %}
                 {% if res.active == True %}
                     <a id="link" href="{% url 'GdzieTaKeja:editreservation' reservation_number=res.reservationNumber %}">
-                        <div class="portCard">
+                        <div class="portCardAct">
                             <p>Numer rezerwacji: {{ res.reservationNumber }}</p>
                             <p class="reservationStatus" style="color: limegreen">Rezerwacja aktywna</p>
                         </div>

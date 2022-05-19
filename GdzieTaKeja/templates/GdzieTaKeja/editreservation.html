@@ -1,7 +1,7 @@
 <!doctype html>
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/editreservationStyle.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/GdzieTaKeja/editreservation_style.css' %}">
 <body>
     <div class="navbar">
         <a id="curr" href="{% url 'GdzieTaKeja:ports' %}"><div class="logo">GdzieTaKeja</div></a>
@@ -9,7 +9,6 @@
             <a id="curr" href="{% url 'GdzieTaKeja:ports' %}"><div id="opt">Przystanie</div></a>
             <a id="curr" href="{% url 'GdzieTaKeja:reservation' %}"><div id="opt">Rezerwacje</div></a>
         </div>
-
     </div>
     <div class="container">
          <h1 id="listheader">EDYTUJ REZERWACJĘ</h1>
@@ -20,6 +19,7 @@
                  <br>
                  <input class="submitButton" type="submit" name='modify' value="Edytuj">
                  <input class="submitButton" type="submit" name='modify' value="Usuń">
+                 <input class="submitButton" type="submit" name='modify' value="Cofnij">
              </form>
          </div>
     </div>
