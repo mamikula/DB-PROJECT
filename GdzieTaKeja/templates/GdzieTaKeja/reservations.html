@@ -25,7 +25,7 @@
         <div class="portlist">
             {% for res in reservation_found %}
                 {% if res.active == True %}
-                    <a id="link" href="{% url 'GdzieTaKeja:editreservation' reservation_number=res.reservationNumber %}">
+                    <a id="link" href="{% url 'GdzieTaKeja:edit_reservation' reservation_number=res.reservationNumber %}">
                         <div class="portCardAct">
                             <p>Numer rezerwacji: {{ res.reservationNumber }}</p>
                             <p class="reservationStatus" style="color: limegreen">Rezerwacja aktywna</p>

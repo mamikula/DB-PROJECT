@@ -12,12 +12,12 @@ from .forms import CityForm,DimensionsForm,DataForm,ReservationForm,EditReservat
 connection_string= 'mongodb+srv://mmikula:Marcinm17@cluster0.7q4lh.mongodb.net/PortDB?retryWrites=true&w=majority'
 my_client = pymongo.MongoClient(connection_string)
 
-dimensions = []
+
 dbname = my_client['PortDB']
 ports = dbname["Port"]
 reservations=dbname["Reservation"]
 yachts=dbname["Yacht"]
-
+dimensions = []
 def get_res_number(length):
     letters = string.ascii_lowercase
     while True:
@@ -26,7 +26,7 @@ def get_res_number(length):
             return resNum
 
 
-def index(request):
+def port_list(request):
     port_list = ports.find({})
     if request.method == 'POST':
 
@@ -132,10 +132,10 @@ def reserve(request,port_id,sector_name,y_id,slot_id):
             arrayid=i
     if sector_type=='parallel':
         if sector['availableLength']<dimensions[y_id]['length']:
-            return render(request, 'GdzieTaKeja/thanks.html', {'action': 'reservation_unavailable'})
+            return render(request, 'GdzieTaKeja/results.html', {'action': 'reservation_unavailable'})
     if sector_type=='perpendicular':
         if sector['slots'][slot_id]['taken']==True:
-            return render(request, 'GdzieTaKeja/thanks.html', {'action': 'reservation_unavailable'})
+            return render(request, 'GdzieTaKeja/results.html', {'action': 'reservation_unavailable'})
     if request.method == 'POST':
 
         form = DataForm(request.POST)
@@ -147,9 +147,11 @@ def reserve(request,port_id,sector_name,y_id,slot_id):
             dateFrom=form.cleaned_data['dateFrom']
             dateTo=form.cleaned_data['dateTo']
             reservationNumber=get_res_number(6)
-            yachts.insert_one({'in':yachtID,'depth':dimensions[y_id]['depth'],'length':dimensions[y_id]['length'],'width':dimensions[y_id]['width'],'type':dimensions[y_id]['y_type']})
+            yachts.insert_one({'in':yachtID,'depth':dimensions[y_id]['depth'],'length':dimensions[y_id]['length'],
+                               'width':dimensions[y_id]['width'],'type':dimensions[y_id]['y_type']})
             if sector_type == 'parallel':
-                newReservation={'reservationNumber':reservationNumber,'portID':port_id,'sectorID':sector_name,'type':sector_type,'slot':None,
+                newReservation={'reservationNumber':reservationNumber,'portID':port_id,'sectorID':sector_name,
+                                'type':sector_type,'slot':None,
                                 'ownerName':name,'ownerSurname':surname,'yachtID':yachtID,
                                 'dateFrom':datetime.combine(dateFrom, datetime.min.time()),
                                 'dateTo':datetime.combine(dateTo, datetime.min.time()), 'active': True}
@@ -158,7 +160,8 @@ def reserve(request,port_id,sector_name,y_id,slot_id):
                 sectors_list[arrayid]= sector
                 ports.update_one({'_id':portInstance},{'$set':{'sectors':sectors_list}})
             else:
-                newReservation ={'reservationNumber':reservationNumber,'portID': port_id, 'sectorID': sector_name, 'type': sector_type, 'slot': slot_id,
+                newReservation ={'reservationNumber':reservationNumber,'portID': port_id, 'sectorID': sector_name,
+                                 'type': sector_type, 'slot': slot_id,
                                  'ownerName':name,'ownerSurname':surname, 'yachtID': yachtID,
                                  'dateFrom':datetime.combine(dateFrom, datetime.min.time()),
                                  'dateTo':datetime.combine(dateTo, datetime.min.time()), 'active': True}
@@ -174,10 +177,12 @@ def reserve(request,port_id,sector_name,y_id,slot_id):
                 sector['slots']=slot_list
                 sectors_list[arrayid]=sector
                 ports.update_one({'_id': portInstance}, {'$set': {'sectors': sectors_list}})
-            return render(request, 'GdzieTaKeja/thanks.html',{'reservationNumber':reservationNumber,'action':'reserve'})
+            return render(request, 'GdzieTaKeja/results.html', {'reservationNumber':reservationNumber, 'action': 'reserve'})
     else:
         form = DataForm()
-    return render(request, 'GdzieTaKeja/reserve.html', {'port_id':port_id,'dim_len':len(dimensions), 'port':port, 'sector_name':sector_name, 'sector_type':sector_type, 'slot_id':slot_id, 'form':form,'y_id':y_id})
+    return render(request, 'GdzieTaKeja/reserve.html', {'port_id':port_id,'dim_len':len(dimensions), 'port':port,
+                                                        'sector_name':sector_name, 'sector_type':sector_type,
+                                                        'slot_id':slot_id, 'form':form,'y_id':y_id})
 
 def reservation(request):
     reservations_found = None
@@ -194,7 +199,7 @@ def reservation(request):
         form = ReservationForm()
     return render(request,'GdzieTaKeja/reservations.html',{'form':form,'reservation_found':reservations_found})
 
-def editreservation(request,reservation_number):
+def edit_reservation(request, reservation_number):
     reservation = reservations.find_one({'reservationNumber': reservation_number})
     if request.method == 'POST':
         form = EditReservationForm(request.POST)
@@ -204,9 +209,11 @@ def editreservation(request,reservation_number):
                 beforeDateTo=reservation['dateTo']
                 dateFrom=form.cleaned_data['dateFrom']
                 dateTo=form.cleaned_data['dateTo']
-                reservations.update_one({'reservationNumber': reservation_number}, {'$set': {'dateFrom': datetime.combine(dateFrom, datetime.min.time()),
-                                                                        'dateTo':datetime.combine(dateTo, datetime.min.time())}})
-                return render(request,'GdzieTaKeja/thanks.html',{'action':'modify','beforeF':beforeDateFrom,'beforeT':beforeDateTo,
+                reservations.update_one({'reservationNumber': reservation_number},
+                                        {'$set': {'dateFrom': datetime.combine(dateFrom, datetime.min.time()),
+                                                                    'dateTo':datetime.combine(dateTo, datetime.min.time())}})
+                return render(request, 'GdzieTaKeja/results.html', {'action': 'modify',
+                                                                 'beforeF':beforeDateFrom,'beforeT':beforeDateTo,
                                                                  "dateFrom":dateFrom,'dateTo':dateTo})
         elif request.POST['modify'] == 'Usuń':
             portInstance=ObjectId(reservation['portID'])
@@ -239,7 +246,7 @@ def editreservation(request,reservation_number):
                 ports.update_one({'_id': portInstance}, {'$set': {'sectors': sectors_list}})
 
             reservations.update_one({'reservationNumber': reservation_number}, {'$set': {'active': False}})
-            return render(request, 'GdzieTaKeja/thanks.html',{'action':'delete'})
+            return render(request, 'GdzieTaKeja/results.html', {'action': 'delete'})
         elif request.POST['modify'] == 'Cofnij':
             return redirect('/reservations/')
     else:
@@ -247,4 +254,4 @@ def editreservation(request,reservation_number):
             form = EditReservationForm(initial={'dateFrom': reservation['dateFrom'], 'dateTo': reservation['dateTo']})
         else:
             form = EditReservationForm()
-    return render(request,'GdzieTaKeja/editreservation.html',{'form':form,'reservation':reservation})
+    return render(request, 'GdzieTaKeja/edit_reservation.html', {'form':form, 'reservation':reservation})

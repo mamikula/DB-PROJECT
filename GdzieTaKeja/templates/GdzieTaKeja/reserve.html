@@ -4,7 +4,7 @@
 <body>
     <div class="container">
         {% if sector_type == "parallel" %}
-            <h1 id="listheader">Dotarłeś do rezerwacji: </h1>
+            <h1 id="listheader">Rezerwacja: </h1>
             <div class = "portSektor">port: {{ port.name }}</div>
             <div class = "portSektor">sektor: {{ sector_name }}</div>
             <div class="act-opt">
@@ -12,7 +12,7 @@
                 <a id="link" href="{% url 'GdzieTaKeja:sectors' port_id=port_id %}"><div id="go_back">Wróć do sektorów</div></a>
             </div>
         {% else %}
-            <h1 id="listheader">Dotarłeś do rezerwacji: </h1>
+            <h1 id="listheader">Rezerwacja: </h1>
             <div class = "portSektor">port: {{ port.name }}</div>
             <div class = "portSektor">sektor: {{ sector_name }}</div>
             <div class = "portSektor">slot: {{ slot_id }}</div>

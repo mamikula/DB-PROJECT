@@ -15,10 +15,10 @@ class DimensionsForm(forms.Form):
 
 class DataForm(forms.Form):
     yachtID=forms.CharField(label="Podaj numer rejestracyjny jachtu:",max_length=6,min_length=6)
-    name=forms.CharField(label="Imię:")
-    surname=forms.CharField(label="Nazwisko:")
-    dateFrom=forms.DateField(label="Początek rezerwacji(rrrr-mm-dd):")
-    dateTo=forms.DateField(label="Koniec rezerwacji(rrrr-mm-dd):")
+    name=forms.CharField(label="Podaj imię:")
+    surname=forms.CharField(label="Podaj nazwisko:")
+    dateFrom=forms.DateField(label="Podaj początek rezerwacji(rrrr-mm-dd):")
+    dateTo=forms.DateField(label="Podaj koniec rezerwacji(rrrr-mm-dd):")
 
 
 class ReservationForm(forms.Form):
