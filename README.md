@@ -116,7 +116,7 @@ Web application allowing to book a place in port on a lake.
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/connection.png"></p>
 <br>
 
-<ol>
+<ul>
   <li> <h2> Widoki: </h2><br>
     
 <p align="center">views.port_list  - lista portów:</p>
@@ -142,16 +142,14 @@ Web application allowing to book a place in port on a lake.
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reserve_2.png"></p>
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reserve_3.png"></p>
 <br>
-    
+<p align="center">views.reservation - podgląd na rezerwację o danym numerze:</p>
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reservations.png"></p>   
+<br>
 <p align="center">views.edit_reservation - edytowanie bądź usuwanie rezerwacji:</p>
     
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_edit_reservation_1.png"></p>
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_edit_reservation_2.png"></p>
-<br>
     
-<p align="center">views.reservation - podgląd na rezerwację o danym numerze(to powinno być przed opcją edycji, ale w pdfie zostaje dziura na ¾ strony):</p>
-    
-<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reservations.png"></p>
 <br>
     
   </li>
@@ -198,19 +196,4 @@ Web application allowing to book a place in port on a lake.
 <br>
    
   </li>
-</ol>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</ul>
