@@ -118,7 +118,8 @@ Web application allowing to book a place in port on a lake.
 
 <ol>
   <li> <h2> Widoki: </h2><br>
-    <p>views.port_list  - lista portów:</p>
+    
+<p>views.port_list  - lista portów:</p>
     
 ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
 <br>
@@ -171,34 +172,32 @@ Web application allowing to book a place in port on a lake.
   
   <li> <h2> Wyświetlanie informacji następuje w plikach .html: </h2><br>
     
-    <p> ports.html: </p>
+<p> ports.html: </p>
     
 ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
 <br>
     
-    <p> sectors.html: </p>
+<p> sectors.html: </p>
 
 ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
 <br>
     
-    <p> slots.html: </p>
+<p> slots.html: </p>
     
 ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
 <br>
     
-    <p> reservations.html: </p>
+<p> reservations.html: </p>
     
 ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
 <br>
     
-    <p> results.html - w zależności od wykonanej akcji, dostajemy specjalny komunikat/informację, ostrzeżenie: </p>
+<p> results.html - w zależności od wykonanej akcji, dostajemy specjalny komunikat/informację, ostrzeżenie: </p>
     
 ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
 <br>
-    
-    
+   
   </li>
-  
 </ol>
   
 
