@@ -76,7 +76,8 @@ Web application allowing to book a place in port on a lake.
 <br>
 
 <ul><h3>Aktywne rezerwacje można:</h3>
-  <li>edytować, tzn. zmieniać datę rozpoczęcia i zakończenia rezerwacji oraz usuwać, czyli anulować.
+  <li>edytować, tzn. zmieniać datę rozpoczęcia i zakończenia rezerwacji </li>
+  <li>usuwać, czyli anulować.</li>
     
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/edit_reservation.png"></p>
 <p font-size="10px" align ="center"> Rysunek 8: Opcje usuwania lub edytowania rezerwacji. </p> 
