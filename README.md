@@ -19,7 +19,7 @@ Web application allowing to book a place in port on a lake.
 <h2> Funkcjonalności</h2>
 <p align ="center">Aplikacja internetowa pozwala na rezerwację miejsca w wyszukanym porcie.</p> 
 
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/ports.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/ports.png"></p>
 
 <p font-size="10px" align ="center"> Rysunek 1: Lista wszystkich portów z opcją wyszukiwania po nazwie. </p> 
 <br>
@@ -27,12 +27,12 @@ Web application allowing to book a place in port on a lake.
 
 <br><br>
 
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/sector_search.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/sector_search.png"></p>
 <p font-size="10px" align ="center"> Rysunek 2: Formularz na dane łodzi potrzebne do wyszukania dostępnych sektorów. </p> 
 
 <br><br>
 
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/sectors.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/sectors.png"></p>
 <p font-size="10px" align ="center"> Rysunek 3: Efekt wypełnienia formularza oraz wyszukania wyników. </p> 
 
 <br>
@@ -45,7 +45,7 @@ Web application allowing to book a place in port on a lake.
   <li>
     Drugi typ to “prostopadły”, zawierający miejsca, w których jachty cumują prostopadle do pomostu. Ograniczeniem tutaj jest wspólna dla wszystkich miejsc danego sektora maksymalna szerokość łodzi. W momencie rezerwacji danego miejsca znika ono z oferty i nie można go zarezerwować.
     
- ![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/slots.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/slots.png"></p>
 <p font-size="10px" align ="center"> Rysunek 4: Dostępne miejsca w wybranym sektorze prostopadłym  </p> 
   </li>
   
@@ -58,19 +58,19 @@ Web application allowing to book a place in port on a lake.
 
 <br>
 
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/reserve.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/reserve.png"></p>
 <p font-size="10px" align ="center"> Rysunek 5: Formularz danych potrzebny do podania w momencie rezerwacji. </p> 
 <br>
 
 <p>W momencie wykonania rezerwacji klient dostaje obowiązkowy do zapisania bądź zapamiętania numer rezerwacji:</p>
 
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/reservation_complete.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/reservation_complete.png"></p>
 <p font-size="10px" align ="center"> Rysunek 6: Komunikat z koniecznym do zapisania numerem rezerwacji. </p> 
 <br>
 
 <p align ="center">Będzie on potrzebny do podania w momencie próby znalezienia rezerwacji w zakładce rezerwacje: </p>
 
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/reservation_search.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/reservation_search.png"></p>
 <p font-size="10px" align ="center"> Rysunek 7: Wyszukiwanie rezerwacji o danym numerze. </p> 
 <br>
 <br>
@@ -78,11 +78,11 @@ Web application allowing to book a place in port on a lake.
 <ul><h3>Aktywne rezerwacje można:</h3>
   <li>edytować, tzn. zmieniać datę rozpoczęcia i zakończenia rezerwacji oraz usuwać, czyli anulować.
     
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/edit_reservation.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/edit_reservation.png"></p>
 <p font-size="10px" align ="center"> Rysunek 8: Opcje usuwania lub edytowania rezerwacji. </p> 
 <br>
     
- ![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/reservation_modification_complete.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/reservation_modification_complete.png"></p>
 <p font-size="10px" align ="center"> Rysunek 9: Rezultat edycji wybranej rezerwacji.</p> 
 <br>
     
@@ -96,24 +96,24 @@ Web application allowing to book a place in port on a lake.
 
 <p> Port z tablicą sektorów, z których każdy, jeśli typu prostopadłego, zawiera tablicę miejsc do rezerwacji: </p>
 
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/port_col.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/port_col.png"></p>
 <p font-size="10px" align ="center"> Rysunek 9: Rezultat edycji wybranej rezerwacji.</p> 
 <br>
 
 <h3> Reservation </h3>
 
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/reservation_col.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/reservation_col.png"></p>
 <br>
 
 <h3> oraz Yacht </h3>
 
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/yacht_col.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/yacht_col.png"></p>
 <br>
 
 <h2> V. Django Framework </h2>
 <p> Do bazy danych podpinamy się przez pymongo: </p>
 
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/connection.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/connection.png"></p>
 <br>
 
 <ol>
@@ -121,51 +121,51 @@ Web application allowing to book a place in port on a lake.
     
 <p>views.port_list  - lista portów:</p>
     
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_ports.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_ports.png"></p>
 <br>
     
 <p>views.sectors - lista sektorów:</p>
     
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_sectors_1.png)
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_sectors_2.png)
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_sectors_3.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_sectors_1.png"></p>
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_sectors_2.png"></p>
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_sectors_3.png"></p>
 <br>
     
 <p>views.slots - list miejsc:</p>
     
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_slots.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_slots.png"></p>
 <br>
     
 <p>views.reserve - wykonywanie rezerwacji:</p>
     
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reserve_1.png)
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reserve_2.png)
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reserve_3.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reserve_1.png"></p>
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reserve_2.png"></p>
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reserve_3.png"></p>
 <br>
     
 <p>views.edit_reservation - edytowanie bądź usuwanie rezerwacji:</p>
     
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_edit_reservation_1.png)
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_edit_reservation_2.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_edit_reservation_1.png"></p>
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_edit_reservation_2.png"></p>
 <br>
     
 <p>views.reservation - podgląd na rezerwację o danym numerze(to powinno być przed opcją edycji, ale w pdfie zostaje dziura na ¾ strony):</p>
     
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reservations.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reservations.png"></p>
 <br>
     
   </li>
   
   <li> <h2> Formularze: </h2><br>
     
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/forms.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/forms.png"></p>
 <br>
     
   </li>
   
   <li> <h2> Routing: </h2><br>
     
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/routing.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/routing.png"></p>
 <br>
     
   </li>
@@ -174,27 +174,27 @@ Web application allowing to book a place in port on a lake.
     
 <p> ports.html: </p>
     
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/html_ports_display.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/html_ports_display.png"></p>
 <br>
     
 <p> sectors.html: </p>
 
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/html_sectors_display.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/html_sectors_display.png"></p>
 <br>
     
 <p> slots.html: </p>
     
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/html_slots_display.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/html_slots_display.png"></p>
 <br>
     
 <p> reservations.html: </p>
     
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/html_reservations_display.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/html_reservations_display.png"></p>
 <br>
     
 <p> results.html - w zależności od wykonanej akcji, dostajemy specjalny komunikat/informację, ostrzeżenie: </p>
     
-![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/html_results.png)
+<p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/html_results.png"></p>
 <br>
    
   </li>
