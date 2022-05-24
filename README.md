@@ -118,37 +118,37 @@ Web application allowing to book a place in port on a lake.
 <ol>
   <li> <h2> Widoki: </h2><br>
     
-<p>views.port_list  - lista portów:</p>
+<p align="center">views.port_list  - lista portów:</p>
     
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_ports.png"></p>
 <br>
     
-<p>views.sectors - lista sektorów:</p>
+<p align="center">views.sectors - lista sektorów:</p>
     
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_sectors_1.png"></p>
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_sectors_2.png"></p>
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_sectors_3.png"></p>
 <br>
     
-<p>views.slots - list miejsc:</p>
+<p align="center">views.slots - list miejsc:</p>
     
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_slots.png"></p>
 <br>
     
-<p>views.reserve - wykonywanie rezerwacji:</p>
+<p align="center">views.reserve - wykonywanie rezerwacji:</p>
     
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reserve_1.png"></p>
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reserve_2.png"></p>
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reserve_3.png"></p>
 <br>
     
-<p>views.edit_reservation - edytowanie bądź usuwanie rezerwacji:</p>
+<p align="center">views.edit_reservation - edytowanie bądź usuwanie rezerwacji:</p>
     
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_edit_reservation_1.png"></p>
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_edit_reservation_2.png"></p>
 <br>
     
-<p>views.reservation - podgląd na rezerwację o danym numerze(to powinno być przed opcją edycji, ale w pdfie zostaje dziura na ¾ strony):</p>
+<p align="center">views.reservation - podgląd na rezerwację o danym numerze(to powinno być przed opcją edycji, ale w pdfie zostaje dziura na ¾ strony):</p>
     
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/views_reservations.png"></p>
 <br>
