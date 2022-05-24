@@ -97,7 +97,6 @@ Web application allowing to book a place in port on a lake.
 <p> Port z tablicą sektorów, z których każdy, jeśli typu prostopadłego, zawiera tablicę miejsc do rezerwacji: </p>
 
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/port_col.png"></p>
-<p font-size="10px" align ="center"> Rysunek 9: Rezultat edycji wybranej rezerwacji.</p> 
 <br>
 
 <h3> Reservation </h3>
