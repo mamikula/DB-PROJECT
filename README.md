@@ -171,27 +171,27 @@ Web application allowing to book a place in port on a lake.
   
   <li> <h2> Wyświetlanie informacji następuje w plikach .html: </h2><br>
     
-<p> ports.html: </p>
+<p align="center"> ports.html: </p>
     
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/html_ports_display.png"></p>
 <br>
     
-<p> sectors.html: </p>
+<p align="center"> sectors.html: </p>
 
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/html_sectors_display.png"></p>
 <br>
     
-<p> slots.html: </p>
+<p align="center"> slots.html: </p>
     
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/html_slots_display.png"></p>
 <br>
     
-<p> reservations.html: </p>
+<p align="center"> reservations.html: </p>
     
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/html_reservations_display.png"></p>
 <br>
     
-<p> results.html - w zależności od wykonanej akcji, dostajemy specjalny komunikat/informację, ostrzeżenie: </p>
+<p align="center"> results.html - w zależności od wykonanej akcji, dostajemy specjalny komunikat/informację, ostrzeżenie: </p>
     
 <p align="center"><img src = "https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/html_results.png"></p>
 <br>
