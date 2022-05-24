@@ -92,12 +92,113 @@ Web application allowing to book a place in port on a lake.
  
 <h2> Baza danych MongoDB Atlas </h2>
 
-<p align="center"> Baza danych PortDB składa się z 3 kolekcji o przykładowych dokumentach: </p>
+<p> Baza danych PortDB składa się z 3 kolekcji o przykładowych dokumentach: </p>
 
-<p align="center"> Port z tablicą sektorów, z których każdy, jeśli typu prostopadłego, zawiera tablicę miejsc do rezerwacji: </p>
+<p> Port z tablicą sektorów, z których każdy, jeśli typu prostopadłego, zawiera tablicę miejsc do rezerwacji: </p>
 
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<p font-size="10px" align ="center"> Rysunek 9: Rezultat edycji wybranej rezerwacji.</p> 
+<br>
 
+<h3> Reservation </h3>
 
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<br>
+
+<h3> oraz Yacht </h3>
+
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<br>
+
+<h2> V. Django Framework </h2>
+<p> Do bazy danych podpinamy się przez pymongo: </p>
+
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<br>
+
+<ol>
+  <li> <h2> Widoki: </h2><br>
+    <p>views.port_list  - lista portów:</p>
+    
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    <br>
+    
+    <p>views.sectors - lista sektorów:</p>
+    
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    <br>
+    <p>views.slots - list miejsc:</p>
+    
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    <br>
+    <p>views.reserve - wykonywanie rezerwacji:</p>
+    
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    <br>
+    
+    <p>views.edit_reservation - edytowanie bądź usuwanie rezerwacji:</p>
+    
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    <br>
+    
+    <p>views.reservation - podgląd na rezerwację o danym numerze(to powinno być przed opcją edycji, ale w pdfie zostaje dziura na ¾ strony):</p>
+    
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    <br>
+    
+  </li>
+  
+  <li> <h2> Formularze: </h2><br>
+    
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    <br>
+    
+  </li>
+  
+  <li> <h2> Routing: </h2><br>
+    
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    <br>
+    
+  </li>
+  
+  <li> <h2> Wyświetlanie informacji następuje w plikach .html: </h2><br>
+    
+    <p> ports.html: </p>
+    
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    <br>
+    
+    <p> sectors.html: </p>
+    
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    <br>
+    
+    <p> slots.html: </p>
+    
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    <br>
+    
+    <p> reservations.html: </p>
+    
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    <br>
+    
+    <p> results.html - w zależności od wykonanej akcji, dostajemy specjalny komunikat/informację, ostrzeżenie: </p>
+    
+    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+    <br>
+    
+    
+  </li>
+  
+</ol>
+  
 
 
 
