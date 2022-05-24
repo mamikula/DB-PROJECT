@@ -120,50 +120,51 @@ Web application allowing to book a place in port on a lake.
   <li> <h2> Widoki: </h2><br>
     <p>views.port_list  - lista portów:</p>
     
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    <br>
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<br>
     
     <p>views.sectors - lista sektorów:</p>
     
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    <br>
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<br>
+    
     <p>views.slots - list miejsc:</p>
     
     ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
     <br>
     <p>views.reserve - wykonywanie rezerwacji:</p>
     
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    <br>
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<br>
     
     <p>views.edit_reservation - edytowanie bądź usuwanie rezerwacji:</p>
     
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    <br>
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<br>
     
     <p>views.reservation - podgląd na rezerwację o danym numerze(to powinno być przed opcją edycji, ale w pdfie zostaje dziura na ¾ strony):</p>
     
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    <br>
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<br>
     
   </li>
   
   <li> <h2> Formularze: </h2><br>
     
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    <br>
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<br>
     
   </li>
   
   <li> <h2> Routing: </h2><br>
     
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    <br>
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<br>
     
   </li>
   
@@ -171,28 +172,28 @@ Web application allowing to book a place in port on a lake.
     
     <p> ports.html: </p>
     
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    <br>
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<br>
     
     <p> sectors.html: </p>
-    
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    <br>
+
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<br>
     
     <p> slots.html: </p>
     
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    <br>
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<br>
     
     <p> reservations.html: </p>
     
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    <br>
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<br>
     
     <p> results.html - w zależności od wykonanej akcji, dostajemy specjalny komunikat/informację, ostrzeżenie: </p>
     
-    ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
-    <br>
+![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+<br>
     
     
   </li>
