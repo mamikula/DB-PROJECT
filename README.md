@@ -19,7 +19,7 @@ Web application allowing to book a place in port on a lake.
 <h2> Funkcjonalności</h2>
 <p align ="center">Aplikacja internetowa pozwala na rezerwację miejsca w wyszukanym porcie.</p> 
 
-![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/ports.png)
 
 <p font-size="10px" align ="center"> Rysunek 1: Lista wszystkich portów z opcją wyszukiwania po nazwie. </p> 
 <br>
@@ -27,12 +27,12 @@ Web application allowing to book a place in port on a lake.
 
 <br><br>
 
-![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/sector_search.png)
 <p font-size="10px" align ="center"> Rysunek 2: Formularz na dane łodzi potrzebne do wyszukania dostępnych sektorów. </p> 
 
 <br><br>
 
-![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/sectors.png)
 <p font-size="10px" align ="center"> Rysunek 3: Efekt wypełnienia formularza oraz wyszukania wyników. </p> 
 
 <br>
@@ -45,7 +45,7 @@ Web application allowing to book a place in port on a lake.
   <li>
     Drugi typ to “prostopadły”, zawierający miejsca, w których jachty cumują prostopadle do pomostu. Ograniczeniem tutaj jest wspólna dla wszystkich miejsc danego sektora maksymalna szerokość łodzi. W momencie rezerwacji danego miejsca znika ono z oferty i nie można go zarezerwować.
     
- ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+ ![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/slots.png)
 <p font-size="10px" align ="center"> Rysunek 4: Dostępne miejsca w wybranym sektorze prostopadłym  </p> 
   </li>
   
@@ -58,19 +58,19 @@ Web application allowing to book a place in port on a lake.
 
 <br>
 
-![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/reserve.png)
 <p font-size="10px" align ="center"> Rysunek 5: Formularz danych potrzebny do podania w momencie rezerwacji. </p> 
 <br>
 
 <p>W momencie wykonania rezerwacji klient dostaje obowiązkowy do zapisania bądź zapamiętania numer rezerwacji:</p>
 
-![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/reservation_complete.png)
 <p font-size="10px" align ="center"> Rysunek 6: Komunikat z koniecznym do zapisania numerem rezerwacji. </p> 
 <br>
 
 <p align ="center">Będzie on potrzebny do podania w momencie próby znalezienia rezerwacji w zakładce rezerwacje: </p>
 
-![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/reservation_search.png)
 <p font-size="10px" align ="center"> Rysunek 7: Wyszukiwanie rezerwacji o danym numerze. </p> 
 <br>
 <br>
@@ -78,11 +78,11 @@ Web application allowing to book a place in port on a lake.
 <ul><h3>Aktywne rezerwacje można:</h3>
   <li>edytować, tzn. zmieniać datę rozpoczęcia i zakończenia rezerwacji oraz usuwać, czyli anulować.
     
-![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/edit_reservation.png)
 <p font-size="10px" align ="center"> Rysunek 8: Opcje usuwania lub edytowania rezerwacji. </p> 
 <br>
     
- ![image](https://github.com/mamikula/CampaignForProducts/blob/master/Screens/ss1.png)
+ ![image](https://github.com/mamikula/DB-PROJECT/blob/master/screenshots/reservation_modification_complete.png)
 <p font-size="10px" align ="center"> Rysunek 9: Rezultat edycji wybranej rezerwacji.</p> 
 <br>
     
