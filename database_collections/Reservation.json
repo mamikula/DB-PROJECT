@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "628cc7b4a352bc7a04798867"
+  },
+  "reservationNumber": "xactkc",
+  "portID": "627658a9ae79bac2fb11dbbc",
+  "sectorID": "A",
+  "type": "parallel",
+  "slot": null,
+  "ownerName": "Marcin",
+  "ownerSurname": "Mikuła",
+  "yachtID": "MM1234",
+  "dateFrom": {
+    "$date": {
+      "$numberLong": "1654473600000"
+    }
+  },
+  "dateTo": {
+    "$date": {
+      "$numberLong": "1655164800000"
+    }
+  },
+  "active": true
+},{
+  "_id": {
+    "$oid": "628cc81da352bc7a04798869"
+  },
+  "reservationNumber": "jaibfe",
+  "portID": "62765b28ae79bac2fb11dbbd",
+  "sectorID": "B",
+  "type": "perpendicular",
+  "slot": 0,
+  "ownerName": "Dominik",
+  "ownerSurname": "Grzesik",
+  "yachtID": "MM5432",
+  "dateFrom": {
+    "$date": {
+      "$numberLong": "1651622400000"
+    }
+  },
+  "dateTo": {
+    "$date": {
+      "$numberLong": "1654300800000"
+    }
+  },
+  "active": true
+},{
+  "_id": {
+    "$oid": "628cc878a352bc7a0479886b"
+  },
+  "reservationNumber": "eewhrb",
+  "portID": "628cbf757da4cef919b8db28",
+  "sectorID": "B",
+  "type": "perpendicular",
+  "slot": 2,
+  "ownerName": "Adam",
+  "ownerSurname": "Nowak",
+  "yachtID": "MM3421",
+  "dateFrom": {
+    "$date": {
+      "$numberLong": "1577836800000"
+    }
+  },
+  "dateTo": {
+    "$date": {
+      "$numberLong": "1580601600000"
+    }
+  },
+  "active": false
+}]

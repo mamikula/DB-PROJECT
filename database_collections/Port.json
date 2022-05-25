@@ -1,0 +1,161 @@
+[{
+  "_id": {
+    "$oid": "627658a9ae79bac2fb11dbbc"
+  },
+  "name": "Gdynia",
+  "sectors": [
+    {
+      "name": "A",
+      "type": "parallel",
+      "depth": 4,
+      "availableLength": 4,
+      "slots": {}
+    },
+    {
+      "name": "B",
+      "type": "perpendicular",
+      "depth": 5,
+      "maxWidth": 2.5,
+      "slots": [
+        {
+          "id": 0,
+          "taken": false
+        },
+        {
+          "id": 1,
+          "taken": false
+        }
+      ]
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "62765b28ae79bac2fb11dbbd"
+  },
+  "id": 0,
+  "name": "Szczecin",
+  "sectors": [
+    {
+      "name": "A",
+      "type": "parallel",
+      "depth": 4,
+      "availableLength": 30,
+      "slots": {}
+    },
+    {
+      "name": "B",
+      "type": "perpendicular",
+      "depth": 5,
+      "maxWidth": 2.5,
+      "slots": [
+        {
+          "id": 0,
+          "taken": true
+        },
+        {
+          "id": 1,
+          "taken": false
+        }
+      ]
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "628cbf757da4cef919b8db28"
+  },
+  "name": "Gdańsk",
+  "sectors": [
+    {
+      "name": "A",
+      "type": "parallel",
+      "depth": 6,
+      "availableLength": 15,
+      "slots": {}
+    },
+    {
+      "name": "B",
+      "type": "perpendicular",
+      "depth": 3,
+      "maxWidth": 4,
+      "slots": [
+        {
+          "id": 0,
+          "taken": false
+        },
+        {
+          "id": 1,
+          "taken": false
+        },
+        {
+          "id": 2,
+          "taken": false
+        },
+        {
+          "id": 3,
+          "taken": false
+        }
+      ]
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "628cc726c0961e0b477c7e70"
+  },
+  "name": "Świnoujście",
+  "sectors": [
+    {
+      "name": "A",
+      "type": "parallel",
+      "depth": 4,
+      "availableLength": 20,
+      "slots": {}
+    },
+    {
+      "name": "C",
+      "type": "parallel",
+      "depth": 2,
+      "availableLength": 10,
+      "slots": {}
+    },
+    {
+      "name": "B",
+      "type": "perpendicular",
+      "depth": 5,
+      "maxWidth": 2.5,
+      "slots": [
+        {
+          "id": 0,
+          "taken": false
+        },
+        {
+          "id": 1,
+          "taken": false
+        }
+      ]
+    },
+    {
+      "name": "D",
+      "type": "perpendicular",
+      "depth": 4,
+      "maxWidth": 3,
+      "slots": [
+        {
+          "id": 0,
+          "taken": false
+        },
+        {
+          "id": 1,
+          "taken": false
+        },
+        {
+          "id": 2,
+          "taken": false
+        },
+        {
+          "id": 3,
+          "taken": false
+        }
+      ]
+    }
+  ]
+}]

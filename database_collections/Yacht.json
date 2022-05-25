@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "6286b47609e111983de183ba"
+  },
+  "in": "MZ5555",
+  "depth": 2,
+  "length": 2,
+  "width": 2,
+  "type": "balastowy"
+},{
+  "_id": {
+    "$oid": "628cc7b4a352bc7a04798866"
+  },
+  "in": "MM1234",
+  "depth": 1,
+  "length": 6,
+  "width": 3,
+  "type": "balastowy"
+},{
+  "_id": {
+    "$oid": "628cc81da352bc7a04798868"
+  },
+  "in": "MM5432",
+  "depth": 1,
+  "length": 4,
+  "width": 2,
+  "type": "mieczowy"
+},{
+  "_id": {
+    "$oid": "628cc878a352bc7a0479886a"
+  },
+  "in": "MM3421",
+  "depth": 2.5,
+  "length": 6,
+  "width": 3,
+  "type": "balastowy"
+}]
